@@ -3,9 +3,7 @@
 var Discord = require("discord.js");
 var fs = require('fs');
 
-client.on('ready', () => {
-    client.user.setActivity('Usa ?help', {type: 'Playing'});
-});
+var bot = new Discord.Client({autoReconnect: true});
 
 bot.OWNERID = '311679965420716043';
 bot.PREFIX = '-';
