@@ -172,4 +172,8 @@ bot.on("disconnected", () => {
 	console.log("Disconnected!");
 });
 
+client.on('ready', () => {
+    client.user.setActivity('Usa ?help', {type: 'Playing'});
+});
+
 bot.login(bot.TOKEN);
