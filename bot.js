@@ -3,7 +3,9 @@
 var Discord = require("discord.js");
 var fs = require('fs');
 
-var bot = new Discord.Client({autoReconnect: true});
+client.on('ready', () => {
+    client.user.setActivity('Usa ?help', {type: 'Playing'});
+});
 
 bot.OWNERID = '311679965420716043';
 bot.PREFIX = '-';
@@ -170,10 +172,6 @@ bot.on('error', (err) => {
 
 bot.on("disconnected", () => {
 	console.log("Disconnected!");
-});
-
-client.on('ready', () => {
-    client.user.setActivity('Usa ?help', {type: 'Playing'});
 });
 
 bot.login(bot.TOKEN);
