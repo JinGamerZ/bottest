@@ -3,8 +3,6 @@ module.exports = {
 	//your code goes here
   const server = message.guild
 
-  if(command === `${prefix}serverinfo`) {
-    
     let embed = new Discord.RichEmbed()
       .setColor(Math.floor(Math.random() * 16777214) + 1,)
       .setDescription(`**Serverinfo:**`)
@@ -26,6 +24,6 @@ module.exports = {
 
   },
   args: '<string>',
-  help: 'sample help text',
+  help: 'Server information',
   hide: false
 }
